@@ -871,14 +871,14 @@
 #define Z_DRIVER_TYPE TMC2209
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
-#define Z2_DRIVER_TYPE TMC2209
+//#define Z2_DRIVER_TYPE TMC2209
 //#define Z3_DRIVER_TYPE A4988
 //#define Z4_DRIVER_TYPE A4988
 //#define I_DRIVER_TYPE  A4988
 //#define J_DRIVER_TYPE  A4988
 //#define K_DRIVER_TYPE  A4988
 #define E0_DRIVER_TYPE TMC2209
-//#define E1_DRIVER_TYPE A4988
+#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
 //#define E4_DRIVER_TYPE A4988
@@ -2461,10 +2461,10 @@
 //
 // Note: Details on connecting to the Anet V1.0 controller are in the file pins_ANET_10.h
 //
-#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
-#define ST7920_DELAY_1 DELAY_NS(150)
-#define ST7920_DELAY_2 DELAY_NS(150)
-#define ST7920_DELAY_3 DELAY_NS(150)
+//#define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+//#define ST7920_DELAY_1 DELAY_NS(150)
+//define ST7920_DELAY_2 DELAY_NS(150)
+//#define ST7920_DELAY_3 DELAY_NS(150)
 
 //
 // K.3D Full Graphic Smart Controller
@@ -2540,7 +2540,7 @@
 //
 // MKS MINI12864 V3 is an alias for FYSETC_MINI_12864_2_1. Type A/B. NeoPixel RGB Backlight.
 //
-//#define MKS_MINI_12864_V3
+#define MKS_MINI_12864_V3
 
 //
 // MKS LCD12864A/B with graphic controller and SD support. Follows MKS_MINI_12864 pinout.
@@ -3007,7 +3007,7 @@
 #endif
 
 // Support for Adafruit NeoPixel LED driver
-//#define NEOPIXEL_LED
+#define NEOPIXEL_LED
 #if ENABLED(NEOPIXEL_LED)
   #define NEOPIXEL_TYPE   NEO_GRBW // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
   //#define NEOPIXEL_PIN     4     // LED driving pin
