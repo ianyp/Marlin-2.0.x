@@ -352,18 +352,18 @@
   #ifndef Z_SERIAL_RX_PIN
     #define Z_SERIAL_RX_PIN                   65
   #endif
-  #ifndef Z2_SERIAL_TX_PIN
-    #define Z2_SERIAL_TX_PIN                  -1
+  #ifndef E8_SERIAL_TX_PIN
+    #define E8_SERIAL_TX_PIN                  -1
   #endif
-  #ifndef Z2_SERIAL_RX_PIN
-    #define Z2_SERIAL_RX_PIN                  -1
+  #ifndef E8_SERIAL_RX_PIN
+    #define E8_SERIAL_RX_PIN                  -1
   #endif
 
-  #ifndef E0_SERIAL_TX_PIN
-    #define E0_SERIAL_TX_PIN                  44
+  #ifndef Z2_SERIAL_TX_PIN
+    #define Z2_SERIAL_TX_PIN                  44
   #endif
-  #ifndef E0_SERIAL_RX_PIN
-    #define E0_SERIAL_RX_PIN                  66
+  #ifndef Z2_SERIAL_RX_PIN
+    #define Z2_SERIAL_RX_PIN                  66
   #endif
   #ifndef E1_SERIAL_TX_PIN
     #define E1_SERIAL_TX_PIN                  -1
