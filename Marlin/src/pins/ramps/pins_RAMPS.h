@@ -143,30 +143,30 @@
   #define Z_CS_PIN                            40
 #endif
 
-#ifndef E0_STEP_PIN
-  #define E0_STEP_PIN                         26
+#ifndef Z2_STEP_PIN
+  #define Z2_STEP_PIN                         26
 #endif
-#ifndef E0_DIR_PIN
-  #define E0_DIR_PIN                          28
+#ifndef Z2_DIR_PIN
+  #define Z2_DIR_PIN                          28
 #endif
-#ifndef E0_ENABLE_PIN
-  #define E0_ENABLE_PIN                       24
+#ifndef Z2_ENABLE_PIN
+  #define Z2_ENABLE_PIN                       24
 #endif
-#ifndef E0_CS_PIN
-  #define E0_CS_PIN                           42
+#ifndef Z2_CS_PIN
+  #define Z2_CS_PIN                           42
 #endif
 
-#ifndef E1_STEP_PIN
-  #define E1_STEP_PIN                         36
+#ifndef E0_STEP_PIN
+  #define E0_STEP_PIN                         36
 #endif
-#ifndef E1_DIR_PIN
-  #define E1_DIR_PIN                          34
+#ifndef E0_DIR_PIN
+  #define E0_DIR_PIN                          34
 #endif
-#ifndef E1_ENABLE_PIN
-  #define E1_ENABLE_PIN                       30
+#ifndef E0_ENABLE_PIN
+  #define E0_ENABLE_PIN                       30
 #endif
-#ifndef E1_CS_PIN
-  #define E1_CS_PIN                           44
+#ifndef E0_CS_PIN
+  #define E0_CS_PIN                           44
 #endif
 
 //
@@ -475,9 +475,9 @@
   #define EXP1_09_PIN                AUX4_10_PIN
   #define EXP1_10_PIN                AUX4_09_PIN
 
-  #define EXP2_03_PIN                AUX4_07_PIN
+  #define EXP2_05_PIN                AUX4_07_PIN
   #define EXP2_04_PIN                AUX3_07_PIN
-  #define EXP2_05_PIN                AUX3_05_PIN
+  #define EXP2_03_PIN                AUX3_05_PIN
   #define EXP2_06_PIN                AUX4_11_PIN
   #define EXP2_07_PIN                AUX3_03_PIN
   #define EXP2_08_PIN                AUX4_12_PIN
@@ -671,6 +671,8 @@
 
       #define BEEPER_PIN             EXP1_10_PIN
       #define BTN_ENC                EXP1_09_PIN
+      #define BTN_EN2               EXP2_06_PIN
+      #define BTN_EN1               EXP2_08_PIN
       #ifndef SD_DETECT_PIN
         #define SD_DETECT_PIN        EXP2_04_PIN
       #endif
@@ -687,8 +689,8 @@
         // not connected to a pin
         #define LCD_BACKLIGHT_PIN             -1  // 65 (MKS mini12864 can't adjust backlight by software!)
 
-        #define BTN_EN1              EXP2_08_PIN
-        #define BTN_EN2              EXP2_06_PIN
+        #define BTN_EN2              EXP2_08_PIN
+        #define BTN_EN1              EXP2_06_PIN
 
       #elif ENABLED(FYSETC_MINI_12864)
 
@@ -697,8 +699,8 @@
         #define DOGLCD_A0            EXP1_07_PIN
         #define DOGLCD_CS            EXP1_08_PIN
 
-        #define BTN_EN1              EXP2_06_PIN
-        #define BTN_EN2              EXP2_08_PIN
+        #define BTN_EN2              EXP2_06_PIN
+        #define BTN_EN1              EXP2_08_PIN
 
         //#define FORCE_SOFT_SPI                  // Use this if default of hardware SPI causes display problems
                                                   //   results in LCD soft SPI mode 3, SD soft SPI mode 0
