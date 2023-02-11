@@ -59,11 +59,11 @@
 #endif
 
 // TMC2130 Diag Pins (currently just for reference)
-#define X_DIAG_PIN                             3
-#define Y_DIAG_PIN                            14
-#define Z_DIAG_PIN                            18
-#define Z2_DIAG_PIN                            2
-#define E0_DIAG_PIN                           15
+//#define X_DIAG_PIN                             3
+//#define Y_DIAG_PIN                            14
+//#define Z_DIAG_PIN                            18
+//#define Z2_DIAG_PIN                            2
+//#define E0_DIAG_PIN                           15
 
 #ifndef SERVO1_PIN
   #define SERVO1_PIN                          21
