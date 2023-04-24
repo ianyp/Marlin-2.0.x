@@ -1211,7 +1211,7 @@
 //#define NOZZLE_TO_PROBE_OFFSET { -1, 3, 0 }
 
 // ANET A6 with BLTouch/3D-Touch mounted right to the nozzle
-#define NOZZLE_TO_PROBE_OFFSET { 32, 0, -0.75 }
+#define NOZZLE_TO_PROBE_OFFSET { 32, 0, -0.945 }
 
 // ANET A6 with BLTouch/3D-Touch betwen Fan and Belt
 // (mount: https://github.com/ralf-e/ANET_A6_modifications/tree/master/A6_X-Axis)
@@ -1294,7 +1294,7 @@
  *     But: `M851 Z+1` with a CLEARANCE of 2  =>  2mm from bed to nozzle.
  */
 #if 1 // 0 for less clearance
-  #define Z_CLEARANCE_DEPLOY_PROBE   20 // Z Clearance for Deploy/Stow
+  #define Z_CLEARANCE_DEPLOY_PROBE   10 // Z Clearance for Deploy/Stow
   #define Z_CLEARANCE_BETWEEN_PROBES  6 // Z Clearance between probe points
 #else
   #define Z_CLEARANCE_DEPLOY_PROBE    5 // Z Clearance for Deploy/Stow
@@ -1303,7 +1303,7 @@
 
 #define Z_CLEARANCE_MULTI_PROBE       3 // Z Clearance between multiple probes
 //#define Z_AFTER_PROBING           5 // Z position after probing is done
-#define Z_PROBE_LOW_POINT          -3 // Farthest distance below the trigger-point to go before stopping
+#define Z_PROBE_LOW_POINT          -5 // Farthest distance below the trigger-point to go before stopping
 
 // For M851 give a range for adjusting the Z probe offset
 #define Z_PROBE_OFFSET_RANGE_MIN -20
@@ -1444,9 +1444,9 @@
 
 // ANET A6, X0/Y0 0 front left bed edge :
 #define X_BED_SIZE 212
-#define Y_BED_SIZE 215
+#define Y_BED_SIZE 185
 #define X_MIN_POS -17
-#define Y_MIN_POS 0
+#define Y_MIN_POS 35
 #define Z_MIN_POS 0
 #define Z_MAX_POS 220
 
@@ -1466,8 +1466,8 @@
 //#define Z_MIN_POS 0
 //#define Z_MAX_POS 230
 
-#define X_MAX_POS 220
-#define Y_MAX_POS Y_BED_SIZE
+#define X_MAX_POS 208
+#define Y_MAX_POS 220
 
 //#define I_MIN_POS 0
 //#define I_MAX_POS 50
@@ -1726,7 +1726,7 @@
   #define MESH_EDIT_GFX_OVERLAY   // Display a graphics overlay while editing the mesh
 
   #define MESH_INSET 0          // Set Mesh bounds as an inset region of the bed
-  #define GRID_MAX_POINTS_X 15      // Don't use more than 15 points per axis, implementation limited.
+  #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   //#define UBL_HILBERT_CURVE       // Use Hilbert distribution for less travel when probing multiple points
@@ -1836,7 +1836,7 @@
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT 20  // X point for Z homing
-  #define Z_SAFE_HOMING_Y_POINT 0  // Y point for Z homing
+  #define Z_SAFE_HOMING_Y_POINT 36  // Y point for Z homing
 
   // Anet A6 with new X-Axis
   //#define Z_SAFE_HOMING_X_POINT 113    // X point for Z homing
@@ -1849,7 +1849,7 @@
 #endif
 
 // Homing speeds (mm/min)
-#define HOMING_FEEDRATE_MM_M { (15*60), (15*60), (4*60) }
+#define HOMING_FEEDRATE_MM_M { (10*60), (15*60), (4*60) }
 
 // Validate that endstops are triggered on homing moves
 #define VALIDATE_HOMING_ENDSTOPS
