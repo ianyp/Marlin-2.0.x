@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "Marlin-2.1.2",
+			"path": "../../Marlin-2.1.2"
+		},
+		{
+			"path": "../../bugfix2.0.x/Marlin-2.0.x"
+		}
+	],
+	"settings": {}
+}
